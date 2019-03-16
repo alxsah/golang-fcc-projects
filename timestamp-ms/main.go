@@ -1,7 +1,7 @@
 package main
 
 import (
-	. "github.com/alxsah/fcc-timestamp-ms/utils"
+	. "github.com/alxsah/golang-fcc-projects/utils"
 	"github.com/gorilla/mux"
 	"log"
 	"net/http"
