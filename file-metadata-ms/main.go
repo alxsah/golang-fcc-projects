@@ -34,6 +34,7 @@ func handleFileAnalyse(w http.ResponseWriter, r *http.Request) {
 	file, header, err := r.FormFile("fileToUpload")
 	if err != nil {
 		RespondWithError(w, http.StatusBadRequest, "File upload failed")
+		return
 	}
 	defer file.Close()
 	metadata := FileMetadata{
